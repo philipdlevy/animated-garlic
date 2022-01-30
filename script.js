@@ -1,3 +1,20 @@
+const clicker = document.getElementById("clicker");
+
+
+function clickTheSquare() { 
+
+    console.log("click was called");
+
+    if (clicker.className === "blackColor") 
+    {
+        clicker.className = "blueColor";
+    } else {
+        clicker.className = "blackColor";
+    }
+}
+
+console.log("click was called");
+clicker.addEventListener("click", clickTheSquare);
 
 
 
@@ -8,8 +25,11 @@
 
 
 /*
-const h2 = document.createElement("h2");
-h2.textContent.context = "This content added by JavaScript";
+function alertButton() {
+    alert("hello");
+}
+clicker.addEventListener("click", alertButton);
 
-document.querySelector("body").appendChild(h2);
+const firstColor = "blackColor";
+    const secondColor = "blueColor";
 */
